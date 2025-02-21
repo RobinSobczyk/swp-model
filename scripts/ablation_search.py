@@ -12,13 +12,13 @@ import pandas as pd
 import seaborn as sns
 import torch
 
-from swp.datasets.phonemes import get_phoneme_testloader
-from swp.test.ablations import ablate
-from swp.utils.datasets import get_test_data
-from swp.utils.models import get_model, get_model_args, get_train_args, load_weights
-from swp.utils.paths import get_figures_dir, get_test_dir
-from swp.utils.setup import seed_everything
-from swp.viz.ablation import fi_scatter, scatter_plot
+from nwr.datasets.phonemes import get_phoneme_testloader
+from nwr.test.ablations import ablate
+from nwr.utils.datasets import get_test_data
+from nwr.utils.models import get_model, get_model_args, get_train_args, load_weights
+from nwr.utils.paths import get_figures_dir, get_test_dir
+from nwr.utils.setup import seed_everything
+from nwr.viz.ablation import fi_scatter, scatter_plot
 
 warnings.filterwarnings(
     "ignore",

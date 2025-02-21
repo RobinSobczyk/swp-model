@@ -16,19 +16,19 @@ current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
 sys.path.append(parent)
 
-from swp.datasets.phonemes import get_phoneme_testloader, get_sonority_dataset
-from swp.test.ablations import ablate_lstm_neuron
-from swp.test.repetition import test
-from swp.utils.datasets import enrich_for_plotting, get_test_data, get_train_data
-from swp.utils.models import get_model, load_weights
-from swp.utils.paths import (
+from nwr.datasets.phonemes import get_phoneme_testloader, get_sonority_dataset
+from nwr.test.ablations import ablate_lstm_neuron
+from nwr.test.repetition import test
+from nwr.utils.datasets import enrich_for_plotting, get_test_data, get_train_data
+from nwr.utils.models import get_model, load_weights
+from nwr.utils.paths import (
     get_ablations_dir,
     get_figures_dir,
     get_test_dir,
     get_weights_dir,
 )
-from swp.utils.setup import backend_setup, seed_everything, set_device
-from swp.viz.test import (
+from nwr.utils.setup import backend_setup, seed_everything, set_device
+from nwr.viz.test import (
     plot_category_errors,
     plot_frequency_errors,
     plot_length_errors,

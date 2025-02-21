@@ -1,4 +1,4 @@
-# single-word-processing-model
+# Neural Word Repetition
 
 ### Quick Start:
 ```

@@ -9,7 +9,7 @@ from sklearn.manifold import MDS
 from torch.utils.data import DataLoader
 from torch.utils.hooks import RemovableHandle
 
-from swp.models.autoencoder import Bimodel, Unimodel
+from ..models.autoencoder import Bimodel, Unimodel
 
 
 class BufferDict(TypedDict):

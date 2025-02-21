@@ -16,15 +16,15 @@ import argparse
 
 import torch.optim as optim
 
-from swp.datasets.phonemes import get_phoneme_trainloader
-from swp.models.autoencoder import Unimodel
-from swp.models.decoders import DecoderLSTM, DecoderRNN
-from swp.models.encoders import EncoderLSTM, EncoderRNN
-from swp.models.losses import AuditoryXENT
-from swp.train.repetition import train
-from swp.utils.datasets import get_phoneme_to_id
-from swp.utils.models import get_model, get_model_name, get_train_args, get_train_name
-from swp.utils.setup import backend_setup, seed_everything, set_device
+from nwr.datasets.phonemes import get_phoneme_trainloader
+from nwr.models.autoencoder import Unimodel
+from nwr.models.decoders import DecoderLSTM, DecoderRNN
+from nwr.models.encoders import EncoderLSTM, EncoderRNN
+from nwr.models.losses import AuditoryXENT
+from nwr.train.repetition import train
+from nwr.utils.datasets import get_phoneme_to_id
+from nwr.utils.models import get_model, get_model_name, get_train_args, get_train_name
+from nwr.utils.setup import backend_setup, seed_everything, set_device
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

@@ -12,13 +12,13 @@ from ast import literal_eval
 
 import pandas as pd
 
-from swp.datasets.phonemes import get_phoneme_testloader
-from swp.test.trajectories import trajectories
-from swp.utils.datasets import get_test_data
-from swp.utils.models import get_model, load_weights
-from swp.utils.paths import get_figures_dir, get_test_dir, get_weights_dir
-from swp.utils.setup import backend_setup, seed_everything, set_device
-from swp.viz.trajectory import plot_trajectories, sns_plot_trajectories
+from nwr.datasets.phonemes import get_phoneme_testloader
+from nwr.test.trajectories import trajectories
+from nwr.utils.datasets import get_test_data
+from nwr.utils.models import get_model, load_weights
+from nwr.utils.paths import get_figures_dir, get_test_dir, get_weights_dir
+from nwr.utils.setup import backend_setup, seed_everything, set_device
+from nwr.viz.trajectory import plot_trajectories, sns_plot_trajectories
 
 warnings.filterwarnings(
     "ignore",

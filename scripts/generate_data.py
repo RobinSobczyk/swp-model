@@ -8,7 +8,7 @@ current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
 sys.path.append(parent)
 
-from swp.utils.datasets import (
+from nwr.utils.datasets import (
     create_epoch,
     create_folds,
     create_phoneme_to_id,
@@ -16,7 +16,7 @@ from swp.utils.datasets import (
     get_phoneme_statistics,
     get_train_fold,
 )
-from swp.utils.setup import seed_everything
+from nwr.utils.setup import seed_everything
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

@@ -5,10 +5,10 @@ current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
 sys.path.append(parent)
 
-from swp.utils.datasets import get_phoneme_to_id
-from swp.utils.grid_search import Grid
-from swp.utils.setup import backend_setup
-from swp.utils.task_queuer import create_supercomputer_train_repetition_queuer
+from nwr.utils.datasets import get_phoneme_to_id
+from nwr.utils.grid_search import Grid
+from nwr.utils.setup import backend_setup
+from nwr.utils.task_queuer import create_supercomputer_train_repetition_queuer
 
 
 def get_grid():
