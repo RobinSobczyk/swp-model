@@ -1,23 +1,19 @@
 import os
 import pathlib
 
-_ON_JEAN_ZAY = os.getenv("SLURM_CLUSTER_NAME") == "jean-zay" or os.getenv(
+_ON_SUPERCOMPUTER = os.getenv("SLURM_CLUSTER_NAME") == "supercomputer" or os.getenv(
     "HOSTNAME", ""
-).startswith("jean-zay")
-
-_ON_OBERON = False  # TODO commands to detect oberon
+).startswith("supercomputer")
 
 repo_root = pathlib.Path(os.path.realpath(__file__)).parent.parent.parent
 
-if _ON_JEAN_ZAY:
+if _ON_SUPERCOMPUTER:
     work_dir = pathlib.Path(os.environ["WORK"])
     gen_script_dir = work_dir / "generated_scripts"
     stimuli_dir = work_dir / "stimuli"
     weights_dir = work_dir / "weights"
     results_dir = work_dir / "results"
     public_dataset_dir = pathlib.Path(os.environ["DSDIR"])
-elif _ON_OBERON:
-    pass  # TODO set paths for Oberon
 else:  # personnal computer
     gen_script_dir = repo_root / "generated_scripts"
     stimuli_dir = repo_root / "stimuli"

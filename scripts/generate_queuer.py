@@ -8,7 +8,7 @@ sys.path.append(parent)
 from swp.utils.datasets import get_phoneme_to_id
 from swp.utils.grid_search import Grid
 from swp.utils.setup import backend_setup
-from swp.utils.task_queuer import create_jean_zay_train_repetition_queuer
+from swp.utils.task_queuer import create_supercomputer_train_repetition_queuer
 
 
 def get_grid():
@@ -41,4 +41,4 @@ def get_grid():
 if __name__ == "__main__":
     backend_setup()
     grid = get_grid()
-    create_jean_zay_train_repetition_queuer(grid=grid, bypass_datagen=True)
+    create_supercomputer_train_repetition_queuer(grid=grid, bypass_datagen=True)

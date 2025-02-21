@@ -12,7 +12,7 @@ def alignment_loss(output, target, criterion, penalty):
         outputs: (output_len, vocab_size) tensor of logits
         targets: (target_len) tensor of target indices
     """
-    # TODO Daniel more precise docstring
+    # TODO more precise docstring
     output_len = output.size(0)
     target_len = target.size(0)
 
@@ -51,7 +51,7 @@ def alignment_loss(output, target, criterion, penalty):
 
 # Decoder forward pass using alignment loss ^^^
 def alignment_forward(self, x, hidden, stop_token, target_len):
-    # TODO Daniel docstring
+    # TODO docstring
 
     outputs = []
 

@@ -39,11 +39,11 @@ def seed_everything(seed=42) -> None:
 
 
 def backend_setup() -> None:
-    r"""Disable CuDNN on Jean-Zay"""
-    on_jean_zay = os.getenv("SLURM_CLUSTER_NAME") == "jean-zay" or os.getenv(
+    r"""Disable CuDNN on supercomputer"""
+    on_supercomputer = os.getenv("SLURM_CLUSTER_NAME") == "supercomputer" or os.getenv(
         "HOSTNAME", ""
-    ).startswith("jean-zay")
-    if on_jean_zay:
+    ).startswith("supercomputer")
+    if on_supercomputer:
         torch.backends.cudnn.enabled = False
 
 

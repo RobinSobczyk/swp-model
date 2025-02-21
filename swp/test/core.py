@@ -2,7 +2,7 @@ from Levenshtein import editops
 
 
 def calculate_errors(prediction: list, target: list) -> dict:
-    # TODO Daniel docstring
+    # TODO docstring
     errors = {
         "inss": 0,
         "dels": 0,

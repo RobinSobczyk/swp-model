@@ -1,1 +1,1 @@
-from .core import create_jean_zay_train_repetition_queuer
+from .core import create_supercomputer_train_repetition_queuer

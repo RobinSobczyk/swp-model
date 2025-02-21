@@ -509,7 +509,7 @@ def get_epoch(fold_id: int | None, force_recreate: bool = False) -> pd.DataFrame
 
 
 def get_phoneme_statistics(train_df: pd.DataFrame):
-    # TODO Daniel docstring
+    # TODO docstring
 
     # iterate over the rows of the dataframe
     for phoneme_key in ["Phonemes", "No Stress"]:

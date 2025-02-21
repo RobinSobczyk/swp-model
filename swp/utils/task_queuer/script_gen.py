@@ -65,7 +65,7 @@ def base_slurm_file_generator(
     r"""
     Generate a `{job_name}.slurm` file that allow `python_script` execution with `script_options` options.
 
-    The slurm script is meant to be run on Jean-Zay super computer. Hence, it is possible to precise:
+    The slurm script is meant to be run on Supercomputer super computer. Hence, it is possible to precise:
     - the `partition` on which to run the script
     - the `qos` which defines basically priority and max times
     - the time limit as a string `timestr`
@@ -121,7 +121,7 @@ def autoarg_slurmarray_file_generator(
     r"""
     Generate a `{job_name}.slurm` file that allow `python_script` execution with `script_options` options.
 
-    The slurm script is meant to be run on Jean-Zay super computer. Hence, it is possible to precise:
+    The slurm script is meant to be run on Supercomputer super computer. Hence, it is possible to precise:
     - the `partition` on which to run the script
     - the `qos` which defines basically priority and max times
     - the time limit as a string `timestr`

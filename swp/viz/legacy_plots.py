@@ -26,7 +26,7 @@ sns.set_palette("colorblind")
 
 # Plot the confusion matrix for the test data
 # def confusion_matrix(confusions: dict, model_name: str, epoch: str) -> None:
-#     # TODO Daniel docstring
+#     # TODO docstring
 
 #     # Initialize the confusion matrix
 #     # confusions = {}

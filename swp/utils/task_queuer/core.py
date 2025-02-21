@@ -75,7 +75,7 @@ def create_and_queue_aggregate(dependency_id_vars: list[str]) -> tuple[str, list
     return aggregate_id, aggregate_commands
 
 
-def create_jean_zay_train_repetition_queuer(
+def create_supercomputer_train_repetition_queuer(
     grid: Grid,
     bypass_datagen: bool = False,
 ):
